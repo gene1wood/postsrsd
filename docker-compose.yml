@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  postsrsd:
+    image: gene1wood/postsrsd
+    container_name: postsrsd
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - SRS_DOMAIN=set-this-to-yourdomain.example.com
+    volumes:
+      # You will need a "postsrsd.secret" file in the "/etc/postsrsd/" directory
+      - /etc/postsrsd:/config
+    ports:
+      - 10001:10001
+      - 10002:10002
+    restart: unless-stopped

@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+exec \
+    postsrsd -l0.0.0.0 -s/config/postsrsd.secret -e

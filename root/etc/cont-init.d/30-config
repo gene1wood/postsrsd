@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# generate secret if missing
+[[ ! -f /config/postsrsd.secret ]] && \
+	tr -dc '1-9a-zA-Z' < /dev/urandom | head -c 32 > /config/postsrsd.secret
+
+# permissions
+chown -R abc:abc \
+	/config
