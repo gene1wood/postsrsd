@@ -2,7 +2,7 @@ version: '3'
 
 services:
   postsrsd:
-    image: gene1wood/postsrsd
+    image: ghcr.io/gene1wood/postsrsd:latest
     container_name: postsrsd
     environment:
       - PUID=1000
