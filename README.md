@@ -1,4 +1,4 @@
-This is a docker container that's based off of the [linuxserver.io alpine base image](https://github.com/linuxserver/docker-baseimage-alpine)
+This is a [docker container](https://github.com/gene1wood/postsrsd/pkgs/container/postsrsd) that's based off of the [linuxserver.io alpine base image](https://github.com/linuxserver/docker-baseimage-alpine)
 which runs [postsrsd](https://github.com/roehling/postsrsd), the Postfix Sender 
 Rewriting Scheme daemon.
 
