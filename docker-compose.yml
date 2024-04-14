@@ -12,6 +12,6 @@ services:
       # You will need a "postsrsd.secret" file in the "/etc/postsrsd/" directory
       - /etc/postsrsd:/config
     ports:
-      - 10001:10001
-      - 10002:10002
+      - 127.0.0.1:10001:10001
+      - 127.0.0.1:10002:10002
     restart: unless-stopped
